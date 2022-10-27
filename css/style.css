@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "MyFont";
+  src: url(../fonts/YanoneKaffeesatz-Medium.ttf);
+}
+:root {
+  --color1: #fcec5d;
+  --color2: #726511;
+  --color3: rgb(72, 44, 2);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "MyFont", sans-serif;
+}
+i.fa {
+  font-size: 30px;
+  margin-right: 10px;
+}
+@keyframes slide {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+/* Стартовая страница */
+.main {
+  background-image: url(../img/background__main.jpg);
+  background-repeat: repeat-x;
+  animation: slide 90s linear infinite;
+  background-size: auto 100%;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.app_header {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 7px solid var(--color1);
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10px;
+}
+.app_logo {
+  padding: 20px 0;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.app_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  overflow: auto;
+  margin-bottom: 40px;
+}
+.app_btn {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 50px;
+  width: 240px;
+  background-color: var(--color1);
+  margin: 0 auto;
+  box-shadow: 0px 7px 0px 0px var(--color2);
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color3);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+/* Эффект при нажатии */
+.app_btn:active {
+  box-shadow: 0px 2px 0px 0px var(--color2);
+  margin-top: 5px;
+  width: 236px;
+  height: auto;
+  outline: none;
+}
+
+.app_btn-text {
+  font-size: 15px;
+  color: var(--color3);
+}
+/* убираем черные рамки при нажатии */
+.app_btn:focus {
+  outline: none;
+}
+
+/* Экран достижений */
+.archivements .app_body {
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+.archivements h2 {
+  text-align: center;
+  color: var(--color1);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.app_body-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.app_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--color1);
+  width: 45%;
+  min-height: 70px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 3px solid var(--color2);
+}
+
+.app_card-text {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.app_result {
+  width: 80%;
+  background-color: rgba(57, 61, 10, 0.5);
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 8px;
+  border: 3px solid var(--color2);
+  color: var(--color1);
+  max-height: 60px;
+}
+.app_result:hover {
+  cursor: pointer;
+}
+
+.btn_back {
+  width: 50px;
+  height: 50px;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--color1);
+  border: 3px solid var(--color2);
+}
+/* Вопросы */
+.app_count,
+.app_text {
+  color: var(--color1);
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* Экран с результатом */
+.results .app_body {
+  justify-content: space-between;
+}
+.app_results-inner {
+  color: var(--color1);
+  padding: 20px;
+}
+.results_title {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+.results_img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.results_img img {
+  width: 200px;
+}
+.results_text-box {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.results_text {
+  margin-bottom: 20px;
+}
+.app.results {
+  animation: none;
+  background-size: cover;
+  background-position: center center;
+}
+.app_result-count {
+  padding-left: 7px;
+}
+.app.results[data-race="griffindor"] {
+  background-image: url(../img/griffindor_bg.jpg);
+}
+
+.app.results[data-race="slizerin"] {
+  background-image: url(../img/slizerin_bg.jpg);
+  background-position: 35% 0;
+}
+
+.app.results[data-race="puffenduy"] {
+  background-image: url(../img/puffenduy_bg.jpg);
+}
+.app.results[data-race="kogtevran"] {
+  background-image: url(../img/kogtevran_bg.jpg);
+}
+.btn_slizerin {
+  color: rgb(38, 248, 178);
+  border: 3px solid rgb(38, 248, 178);
+}
+.btn_puffenduy {
+  color: rgb(255, 163, 26);
+  border: 3px solid rgb(255, 163, 26);
+}
+.btn_griffindor {
+  color: var(--color1);
+  border: 3px solid var(--color2);
+}
+.btn_kogtevran {
+  color: rgb(31, 194, 253);
+  border: 3px solid rgb(31, 194, 253);
+}
