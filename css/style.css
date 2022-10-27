@@ -138,6 +138,12 @@ i.fa {
   margin: 10px auto;
   padding: 10px;
   border: 3px solid var(--color2);
+  max-width: 500px;
+}
+.app_body-top {
+  max-width: 635px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .app_card-text {
@@ -146,6 +152,7 @@ i.fa {
 }
 .app_result {
   width: 80%;
+  max-width: 600px;
   background-color: rgba(57, 61, 10, 0.5);
   margin: 10px auto;
   display: flex;
