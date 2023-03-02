@@ -3,4 +3,4 @@ An app for your mobile devices. Also big screen accessible. This 'Hogwarts game'
 
 <a href="" target="_blank">Check on gitPages</a>
 
-[Check on gitPages]([http://example.com](https://mariazakharova0805.github.io/Hogwarts_vueApp/)){target="_blank"}
+[Check on gitPages]([http://example.com](https://mariazakharova0805.github.io/Hogwarts_vueApp/]){target="_blank"}
