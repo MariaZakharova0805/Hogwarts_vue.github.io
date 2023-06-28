@@ -1,4 +1,17 @@
-# Vue app "Hogwarts"
-An app for your mobile devices. Also big screen accessible. This 'Hogwarts game' app created with the help of HTML, CSS, JS and  Vue.js.
+# Hogwarts
 
-<a href="https://mariazakharova0805.github.io/Hogwarts_vueApp/" target="_blank">Check on GitPages</a>
+<a href="https://mariazakharova0805.github.io/Hogwarts_vueApp/" target="_blank">![Project illustartion](https://github.com/MariaZakharova0805/Hogwarts_vueApp/raw/main/screenshot.jpg)</a>
+
+### Project Descrition
+- An app game for your mobile devices.
+- The game will help you choose the right House of Hogwarts :)
+- Also big screen accessible. 
+
+## Deploy
+Created by GitPages
+<a href="https://mariazakharova0805.github.io/Hogwarts_vueApp/" target="_blank">Hogwarts.app</a>
+
+## Technologies
+- Vue
+- JS
+- CSS
